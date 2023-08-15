@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Signup.css" />
+    <link rel="stylesheet" href="../../css/Header.css" />
+    <link rel="stylesheet" href="../../css/Footer.css" />
+    <link rel="stylesheet" href="../../css/loader.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body onload="loaderfunc()">
+    <main class="loader-main" id="loadermain">
+      <div class="loader-container">
+        <div class="loader-box-container">
+          <div class="loader-box"></div>
+        </div>
+        <div class="heading-box-container">
+          <h1 class="heading-text">Loading your content, please wait...</h1>
+        </div>
+      </div>
+    </main>
+    {{>headers}}
+    <main class="signup-main-container">
+      <div class="signup-m-container">
+        <div class="rightside-input">
+          <div class="signup-heading-container">
+            <h1 class="headingname-signup">Signup</h1>
+          </div>
+          <form
+            class="signup-input-form-container"
+            method="post"
+            onsubmit="return formdatasave()"
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input-fields"
+              placeholder="Name"
+              
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-fields"
+              placeholder="Email"
+            
+            >
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="input-fields"
+              placeholder="Phone"
+           
+            >
+
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="input-fields"
+              placeholder="Username"
+           
+            >
+
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input-fields"
+              placeholder="Password"
+              
+            >
+            <input
+              type="text"
+              name="conformpassword"
+              id="conformpassword"
+              class="input-fields"
+              placeholder="Confirm-Password"
+         
+            >
+            <div class="submit-signup-container">
+              <input
+                type="submit"
+                id="submits"
+                value="Submit"
+              ><br />
+            </div>
+            <div class="loginpage-container">
+              <p class="name-login">Have an account?</p>
+              <a href="/login" class="login-page-name">Log in</a>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </main>
+  </body>
+<script src="../../js/loader.js"></script>
+<script src="../../js/signup.js"></script>
+<script src="../../js/header.js"></script>
+
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+</html>

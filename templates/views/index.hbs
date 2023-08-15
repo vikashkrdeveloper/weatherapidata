@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Header.css">
+    <link rel="stylesheet" href="../../css/Footer.css">
+    <link rel="stylesheet" href="../../css/loader.css">
+    <link rel="stylesheet" href="../../css/Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderfunc()">
+    <main class="loader-main" id="loadermain">
+        <div class="loader-container">
+            <div class="loader-box-container">
+                <div class="loader-box"></div>
+            </div>
+            <div class="heading-box-container">
+                <h1 class="heading-text">Loading your content, please wait...</h1>
+            </div>
+        </div>
+    </main>
+    {{>headers}}
+
+    <main class="main-home-container">
+
+        <div class="main-home-box-container">
+            <div class="search-box-container-box">
+                <form class="form-text-box-container" method="get" onsubmit="return citysearchdata()">
+                    <input type="text" name='search' id='search-container' placeholder='Type Your City Search ?'>
+                    <label for="search-container" class="search-containers">
+                        <p class="link-text"><i class="fi-xnsuhl-search iconsearch"></i></p>
+                    </label>
+                </form>
+            </div>
+
+            <div class="main-home-box-show-container">
+                <div class="main-home-box-show">
+                    <div class="main-home-box">
+                        <div class="all-show-details-container">
+                            <div class="location-container">
+                                <i class="fi-cnsuxl-map-marker-solid icon-location"></i>
+                                <p class="location-name" id="name-location"></p>
+                            </div>
+                        <h1 id="tempdata"></h1>
+
+                        </div>
+                        <div class="sunimage-box-container">
+                            <img class="sunimage-box" src="../../images/pngwing.com.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+    {{>Footer}}
+</body>
+<script src="../../js/home.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/loader.js"></script>
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+</html>

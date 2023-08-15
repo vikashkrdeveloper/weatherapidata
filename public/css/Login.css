@@ -1,0 +1,130 @@
+.login-container {
+    width: 500px;
+    height: 500px;
+  }
+  .login-main-container{
+  margin-top: 60px;
+
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .login-heading {
+    margin: 50px;
+    margin-bottom: 0px;
+    height: 60px;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgb(159, 159, 159);
+    border-bottom: none;
+
+  }
+  .login-input {
+    background-color: white;
+    border: 1px solid rgb(159, 159, 159);
+    border-top: none;
+    margin: 50px;
+    margin-top: 0px;
+    width: 75%;
+    height: 70%;
+    border-radius: 0px 0px 10px 10px;
+
+  }
+  .pagename{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .login-input-form {
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+  }
+  .input-field {
+    outline-color: rgb(131, 131, 130);
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    padding: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(187, 187, 187);
+  }
+  .submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+  }
+  #name {
+    text-transform: lowercase;
+  }
+   
+  #submit {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 132, 255);
+    color: white;
+  }
+
+  .usernot-login-container{
+    position: relative;
+    border-radius: 10px;
+    top: 40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    margin-left: 10px;
+  }
+  .signup-link{
+    margin-left: 8px;
+    text-decoration: none;
+    color: rgb(208, 0, 255);
+    cursor: pointer;
+    font-weight: 700;
+    transition: .4s;
+  }
+  .signup-link:hover{
+    color: rgb(238, 0, 255);
+  }
+  .top-button-container{
+    margin-top: 0;
+  }
+  .youare-not-account{
+    color:black;
+     font-weight: 700;
+  }
+  .forgetpassword-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .forgetpassword{
+    margin: 5px;
+   text-decoration: none;
+   font-size: 16px;
+   color: black;
+   font-weight: 600;
+   transition: 1s;
+  }
+  .forgetpassword:hover{
+
+    color: rgb(255, 111, 0);
+  } 

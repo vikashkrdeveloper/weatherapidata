@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 4px solid #ffffff;
+}
+body{
+  background-color: rgb(223, 223, 223);
+}
+.header-container {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    20deg,
+    rgb(91, 153, 105),
+    rgb(125, 58, 188),
+    rgb(141, 74, 74)
+  );
+  border-bottom: 1px solid rgb(109, 109, 109);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+.name-container {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sign-name {
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  transition: 0.8s;
+  opacity: 0;
+  animation: slidetop 0.8s ease forwards;
+}
+
+.nav-bar-container {
+  width: 74%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ul-bar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list-items-container {
+  list-style: none;
+  width: 80px;
+  margin: 3px;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.4s;
+  animation: navslidetop 0.8s ease forwards;
+}
+.last-container {
+  width: 50px;
+  margin-right: 30px;
+}
+#search-con {
+  position: absolute;
+  padding: 12px;
+  width: 200px;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 10px;
+  right: 40px;
+  outline-color: rgb(255, 106, 0);
+  display: none;
+}
+.link-texts {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.label-box {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+#check {
+  display: none;
+}
+.navlink {
+  text-decoration: none;
+}
+.navlink:hover {
+  transition: 0.4s;
+  border-bottom: 4px solid white;
+}
+.font-dot {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.search-ion {
+  font-size: 20px;
+  cursor: pointer;
+}
+#skills {
+  width: auto;
+}
+
+@keyframes slidetop {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes navslidetop {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .name-container {
+    width: 250px;
+  }
+}
+@media (max-width: 850px) {
+  .label-box {
+    margin-right: 20px;
+    display: block;
+  }
+
+  .nav-bar-container {
+    justify-content: flex-end;
+  }
+  .ul-bar-container {
+    background: linear-gradient(
+      20deg,
+      rgb(91, 153, 105),
+      rgb(125, 58, 188),
+      rgb(141, 74, 74)
+    );
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 45px;
+    left: -110%;
+    transition: all 0.5s;
+    display: block;
+  }
+
+  .list-items-container {
+    width: 100%;
+    height: 40px;
+  }
+  #home {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-name {
+    font-size: 25px;
+  }
+  .font-dot {
+    font-size: 25px;
+  }
+}

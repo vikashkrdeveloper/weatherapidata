@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/Error.css" />
+  <link rel="stylesheet" href="../../css/Header.css" />
+  <link rel="stylesheet" href="../../css/loader.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderfunc()">
+  <main class="loader-main" id="loadermain">
+    <div class="loader-container">
+      <div class="loader-box-container">
+        <div class="loader-box"></div>
+      </div>
+      <div class="heading-box-container">
+        <h1 class="heading-text">Loading your content, please wait...</h1>
+      </div>
+    </div>
+  </main>
+
+  {{>headers}}
+  <div class="error-container">
+    <section class="page_404">
+
+      <div class="col-sm-10 col-sm-offset-1 text-center">
+        <div class="four_zero_four_bg">
+          <h1 class="text-center">404</h1>
+        </div>
+
+        <div class="contant_box_404">
+          <div class="contant_box">
+            <h3 class="h2">
+              Ooops page not found
+            </h3>
+
+            <p>the page you are looking for not avaible!</p>
+
+            <a href="/" class="link_404">Go to Home</a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </div>
+</body>
+
+<script src="../../js/loader.js"></script>
+<script src="../../js/header.js"></script>
+
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+</html>

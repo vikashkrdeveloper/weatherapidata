@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/Login.css" />
+    <link rel="stylesheet" href="../../css/Header.css" />
+    <link rel="stylesheet" href="../../css/Footer.css" />
+    <link rel="stylesheet" href="../../css/loader.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload="loaderfunc()">
+    <main class="loader-main" id="loadermain">
+      <div class="loader-container">
+        <div class="loader-box-container">
+          <div class="loader-box"></div>
+        </div>
+        <div class="heading-box-container">
+          <h1 class="heading-text">Loading your content, please wait...</h1>
+        </div>
+      </div>
+    </main>
+
+    {{>headers}}
+    <main class="login-main-container">
+      <div class="login-container">
+        <div class="login-heading">
+          <h1 class="pagename">Login</h1>
+        </div>
+        <div class="login-input">
+          <form class="login-input-form" method="post" onsubmit="return formdatasubmit()">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-field"
+              placeholder="Email"
+            /><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input-field"
+              placeholder="Password"
+            /><br />
+            <div class="forgetpassword-container">
+              <a href="/password/reset" class="forgetpassword">Forget Password
+              </a>
+            </div>
+            <div class="submit-container">
+              <input
+                type="submit"
+                id="submit"
+                value="Login"
+              /><br />
+            </div>
+
+            <div class="usernot-login-container">
+              <p class="youare-not-account">Don't have an account ?</p>
+              <a href="/signup" class="signup-link">Sign up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+  </body>
+<script src="../../js/loader.js"></script>
+<script src="../../js/login.js"></script>
+<script src="../../js/header.js"></script>
+
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+</html>
